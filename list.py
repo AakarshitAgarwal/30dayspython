@@ -9,5 +9,8 @@ numbers.insert(1,77)
 numbers.remove(9)
 numbers.pop()
 print(numbers)
-tup = (1,)
-print(tup)
+numbers[1]= 7
+print(numbers)
+# tup = (1,4,5,6)
+# tup[1] = 8     # tuples are immutables
+# print(tup)
