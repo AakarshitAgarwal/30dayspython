@@ -1,7 +1,7 @@
-# # f =open("sample.txt","rt")
-# # print(f.readlines())
-# # print(f.readlines())
-# # print(f.readlines())
+# f =open("sample.txt","rt")  # rt mode is default
+# print(f.readlines())
+# print(f.readlines())
+# print(f.readlines())
 
 # f = open("sample.txt","rt")
 
@@ -26,8 +26,14 @@
 # f.close
 
 #append mode
-f=open("sample.txt","a")
+# f=open("sample.txt","a")
 
-a =  f.write("Aakarshit is trying hands on python")
-print(a)
-f.close
+# a =  f.write("Aakarshit is trying hands on python")
+# print(a)
+# f.close
+
+
+#with block to read line
+
+with open("sample.txt") as f: # rt mode is default
+    print(f.readlines())
