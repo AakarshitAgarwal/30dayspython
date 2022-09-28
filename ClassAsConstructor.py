@@ -14,7 +14,13 @@ class Employee:
     def from_dash(cls,string):
         return cls(*string.split("-"))
 
+    @staticmethod
+    def printgood(string):
+        print("This is good "+string)
+
 
 karan = Employee.from_dash("Karan-420-Student") 
 
-print(karan.salary)
+
+# print(karan.salary)
+karan.printgood("Aakarshit")
