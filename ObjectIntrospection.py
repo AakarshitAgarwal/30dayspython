@@ -27,12 +27,8 @@ class Employee:
 hindustani_supporter = Employee("Hindustani", "Supporter")
 aakararshit_coder = Employee("Aakarshit", "Agarwal")
 
-# print(aakararshit_coder.email())   # use this when property as a decorator is not defined
- 
-print(aakararshit_coder.email)
+# print(type(aakararshit_coder))
+# print(dir(aakararshit_coder))
 
-# hindustani_supporter.email = "setter.agarwal@coder.com"
-# print(hindustani_supporter.email)
-
-# del hindustani_supporter.email
-# print(hindustani_supporter.email)
+import inspect
+print(inspect.getmembers(aakararshit_coder))
